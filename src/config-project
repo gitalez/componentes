@@ -1,0 +1,128 @@
+///// reutilizacion de componentes
+
+// reutilizamos  el header de cada pagina 
+
+// agrupamos todos los componentes que vamos a crear  , creando un components.module
+
+ionic g module components 
+
+//// creamos los componentes 
+
+/// header 
+
+ionic g component components/header --spec=false --dry-run
+
+lo tenemos que declarar el el componets.module 
+
+y el components.module lo tenemos que importar en el app.module
+
+
+/////////////// DEV APP ///////////////////////////////////
+
+para activar al dev app ponemos  ionic serve -c 
+
+
+no anda !!!!!
+
+
+/////////////// android studio ////////////////
+
+una vez instalado los sdk que necesitamos en configuracion
+
+para crear un android virtual creamos un nuevo proyecto 
+
+seguimos las indicaciones de android studio 
+asignamos 8G a la maquina virtual 
+hacemos run y abre un androi virtual 
+
+hacemos en la terminal 
+
+ionic cordova prepare android  
+
+luego 
+ionic cordova build android
+
+en android hay que ir a abrir un proyecto existente 
+luego  elegir la carpeta android en platforms 
+
+siempre que modifiquemos la app corremos el build
+el prepare no hace falta 
+se vuelve al android studio y se hace play de nuevo
+
+///////////////////// otro forma !!!!!!!!
+
+ionic cordova run --list
+
+nos da : Pixel_2_XL_API_28
+
+hacemos ionic cordova run android --target=Pixel_2_XL_API_28
+
+da error 
+hay que ir al android studio y configurar otro virtual 
+
+una vez generado 
+hacemos el list 
+
+ionic cordova run --list
+
+nos da la nueva virtual 
+
+hacemos ionic cordova run android --target=Pixel_2_XL_API_28_2_-V2 -l
+
+
+/////////////// android real 
+
+en el celular activar la depuracion usb 
+en la consola 
+ionic cordova run --list
+nos da el  id  del cel 
+
+520023a9fcd86539
+
+luego hacemos ionic cordova run android -l
+
+y guala my app se despliega 
+
+
+//////// IOS ///////////////////////////
+
+en xcode loquearse con mi account de desarrollador 
+ de alguna forma que no entendi habilite el factor de dos pasos 
+agregue el certificado de distribucion de ios 
+
+ luego 
+
+sudo npm install -g ios-sim
+
+sudo npm install -g ios-deploy --unsafe-perm=true
+
+en la carpeta del proyecto 
+
+ionic cordova prepare ios
+
+luego de compilado 
+
+vamos a platforms /ios 
+y ejejutamos Myapp.xcodeproj 
+
+luego hacemos el build
+
+ionic cordova build ios
+
+
+sudo npm install -g ios-deploy --unsafe-perm=true
+
+ionic cordova run --list
+
+
+ionic cordova emulate ios --debug --target "iPhone-XXXXXX" 
+
+
+ionic cordova build ios -- --buildFlag="-UseModernBuildSystem=0"
+
+ionic cordova emulate ios -- --buildFlag="-UseModernBuildSystem=0"
+
+ionic cordova run ios -- --buildFlag="-UseModernBuildSystem=0" -l
+
+
+

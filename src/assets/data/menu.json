@@ -1,0 +1,118 @@
+[
+    {
+      "icon": "american-football",
+      "name":"Action Sheet",
+      "redirecTo": "/action-sheet"
+    },
+    {
+      "icon": "appstore",
+      "name":"Alert",
+      "redirecTo": "/alert"
+    },
+    {
+      "icon": "bonfire",
+      "name": "Principal",
+      "redirecTo": "/botones",
+      "submenu": [{ "name": "Tablero", "url": "/card" }]
+    },
+    {
+      "icon": "beaker",
+      "name":"Avatar",
+      "redirecTo": "/avatar"
+    },
+    {
+      "icon": "radio-button-on",
+      "name":"Botones y router",
+      "redirecTo": "/botones"
+    },
+    {
+      "icon": "card",
+      "name":"Cards",
+      "redirecTo": "/card"
+    },
+    {
+      "icon": "checkmark-circle-outline",
+      "name":"Check Box",
+      "redirecTo": "/check"
+    },
+    {
+      "icon": "calendar",
+      "name":"DateTime",
+      "redirecTo": "/date-time"
+    },
+    {
+      "icon": "car",
+      "name":"Fabs",
+      "redirecTo": "/fab"
+    },
+    {
+      "icon": "grid",
+      "name":"Grids - rows",
+      "redirecTo": "/grid"
+    },
+    {
+      "icon": "infinite",
+      "name":"Infinite Scroll",
+      "redirecTo": "/infinite-scroll"
+    },
+    {
+      "icon": "hammer",
+      "name":"Input - forms",
+      "redirecTo": "/input"
+    },
+    {
+      "icon": "list",
+      "name":"Listas - sliding",
+      "redirecTo": "/list"
+    },
+    {
+      "icon": "reorder",
+      "name":"reorden de listas",
+      "redirecTo": "/list-reorder"
+    },
+    {
+      "icon": "refresh-circle",
+      "name":"Loading",
+      "redirecTo": "/loading"
+    },
+    {
+      "icon": "phone-portrait",
+      "name":"Modal",
+      "redirecTo": "/modal"
+    },
+    {
+      "icon": "tablet-portrait",
+      "name":"Popover",
+      "redirecTo": "/popover"
+    },
+    {
+      "icon": "code-working",
+      "name":"Progress bar y Range",
+      "redirecTo": "/progress-bar"
+    },
+    {
+      "icon": "arrow-round-down",
+      "name":"Refresher",
+      "redirecTo": "/refresher"
+    },
+    {
+      "icon": "cog",
+      "name":"Tabs",
+      "redirecTo": "/tabs/account"
+    },
+    {
+      "icon": "search",
+      "name":"SearchBar",
+      "redirecTo": "/searchbar"
+    },
+    {
+      "icon": "copy",
+      "name":"Segment",
+      "redirecTo": "/segment"
+    },
+    {
+      "icon": "albums",
+      "name":"Slides",
+      "redirecTo": "/slides"
+    }
+  ]
